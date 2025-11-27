@@ -1,5 +1,7 @@
+name: gitleaks-scan
+on:
 push:
-    branches: [ master ]
+    branches: [ main, master ]
   pull_request:
 
 jobs:
