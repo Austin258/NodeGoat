@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 0  # Full history for leak detection
       - name: Run Gitleaks
-        uses: zricethezav/gitleaks-action@v4
+        uses: zricethezav/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # For PR comments (auto-provided)
           GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true     # Uploads SARIF report
